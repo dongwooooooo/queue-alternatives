@@ -1,0 +1,13 @@
+// queue-b-in-process: 외부 의존 없음
+// 루트 build.gradle subprojects 블록이 starter / starter-test 를 이미 제공.
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}
+
+// Testcontainers 사용 안 함 — 루트에서 제공된 의존성 중 testcontainers는 컴파일 패스에만 존재.
+// 실제 테스트에서 사용하지 않으므로 클래스패스에 남아도 무해.

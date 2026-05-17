@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: queue-c-pg-skip-locked
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
+  datasource:
+    hikari:
+      maximum-pool-size: 32
+      minimum-idle: 4

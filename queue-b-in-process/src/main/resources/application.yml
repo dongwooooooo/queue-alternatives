@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: queue-b-in-process
+
+queue:
+  admit-ttl-seconds: 60
+
+logging:
+  level:
+    root: INFO
+    com.dongwoo.queueb: INFO

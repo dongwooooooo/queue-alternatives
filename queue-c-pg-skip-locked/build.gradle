@@ -1,0 +1,19 @@
+// queue-c-pg-skip-locked: PostgreSQL FOR UPDATE SKIP LOCKED 기반 대기열
+// 루트 subprojects 블록이 spring-boot-starter / test / testcontainers-junit-jupiter 제공.
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    implementation 'org.flywaydb:flyway-core'
+    implementation 'org.flywaydb:flyway-database-postgresql'
+    runtimeOnly 'org.postgresql:postgresql'
+
+    testImplementation 'org.testcontainers:testcontainers-postgresql:2.0.2'
+}

@@ -1,0 +1,5 @@
+rootProject.name = 'queue-alternatives'
+
+include 'queue-a-redis-sorted-set'
+include 'queue-b-in-process'
+include 'queue-c-pg-skip-locked'

@@ -1,0 +1,96 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.4.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :queue-a-redis-sorted-set:compileJava UP-TO-DATE
+> Task :queue-a-redis-sorted-set:processResources UP-TO-DATE
+> Task :queue-a-redis-sorted-set:classes UP-TO-DATE
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+> Task :queue-a-redis-sorted-set:compileTestJava
+> Task :queue-a-redis-sorted-set:processTestResources NO-SOURCE
+> Task :queue-a-redis-sorted-set:testClasses
+
+> Task :queue-a-redis-sorted-set:test
+
+QueueAThroughputTest STANDARD_OUT
+    02:10:30.024 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.dongwoo.queuea.QueueAThroughputTest]: QueueAThroughputTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    02:10:30.075 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.dongwoo.queuea.QueueAApplication for test class com.dongwoo.queuea.QueueAThroughputTest
+
+      .   ____          _            __ _ _
+     /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+    ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+     \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+      '  |____| .__|_| |_|_| |_\__, | / / / /
+     =========|_|==============|___/=/_/_/_/
+
+     :: Spring Boot ::                (v4.0.0)
+
+    2026-05-18T02:10:30.252+09:00  INFO 79532 --- [queue-a-redis-sorted-set] [    Test worker] org.testcontainers.images.PullPolicy     : Image pull policy will be performed by: DefaultPullPolicy()
+    2026-05-18T02:10:30.253+09:00  INFO 79532 --- [queue-a-redis-sorted-set] [    Test worker] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+    2026-05-18T02:10:30.257+09:00  INFO 79532 --- [queue-a-redis-sorted-set] [    Test worker] org.testcontainers.DockerClientFactory   : Testcontainers version: 2.0.2
+    2026-05-18T02:10:30.377+09:00  INFO 79532 --- [queue-a-redis-sorted-set] [    Test worker] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+    2026-05-18T02:10:30.564+09:00  INFO 79532 --- [queue-a-redis-sorted-set] [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with Environment variables, system properties and defaults. Resolved dockerHost=unix:///Users/idong-u/.docker/run/docker.sock
+    2026-05-18T02:10:30.565+09:00  INFO 79532 --- [queue-a-redis-sorted-set] [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+    2026-05-18T02:10:30.584+09:00  INFO 79532 --- [queue-a-redis-sorted-set] [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
+      Server Version: 24.0.5
+      API Version: 1.43
+      Operating System: Docker Desktop
+      Total Memory: 7851 MB
+    2026-05-18T02:10:30.585+09:00  WARN 79532 --- [queue-a-redis-sorted-set] [    Test worker] o.testcontainers.utility.ResourceReaper  : 
+    ********************************************************************************
+    Ryuk has been disabled. This can cause unexpected behavior in your environment.
+    ********************************************************************************
+    2026-05-18T02:10:30.586+09:00  INFO 79532 --- [queue-a-redis-sorted-set] [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+    2026-05-18T02:10:30.586+09:00  INFO 79532 --- [queue-a-redis-sorted-set] [    Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+    2026-05-18T02:10:30.607+09:00  INFO 79532 --- [queue-a-redis-sorted-set] [    Test worker] tc.redis:7-alpine                        : Creating container for image: redis:7-alpine
+    2026-05-18T02:10:30.900+09:00  INFO 79532 --- [queue-a-redis-sorted-set] [    Test worker] tc.redis:7-alpine                        : Container redis:7-alpine is starting: a2883499db03c3d2bc0f0768c67ffd788c84c4f5d85841b92b1c0a3f335e6207
+    2026-05-18T02:10:31.236+09:00  INFO 79532 --- [queue-a-redis-sorted-set] [    Test worker] tc.redis:7-alpine                        : Container redis:7-alpine started in PT0.629554S
+    2026-05-18T02:10:31.241+09:00  INFO 79532 --- [queue-a-redis-sorted-set] [    Test worker] c.dongwoo.queuea.QueueAThroughputTest    : Starting QueueAThroughputTest using Java 25.0.1 with PID 79532 (started by idong-u in /Users/idong-u/d/queue-alternatives/queue-a-redis-sorted-set)
+    2026-05-18T02:10:31.242+09:00  INFO 79532 --- [queue-a-redis-sorted-set] [    Test worker] c.dongwoo.queuea.QueueAThroughputTest    : No active profile set, falling back to 1 default profile: "default"
+    2026-05-18T02:10:31.405+09:00  INFO 79532 --- [queue-a-redis-sorted-set] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+    2026-05-18T02:10:31.406+09:00  INFO 79532 --- [queue-a-redis-sorted-set] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+    2026-05-18T02:10:31.421+09:00  INFO 79532 --- [queue-a-redis-sorted-set] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+    2026-05-18T02:10:31.514+09:00  WARN 79532 --- [queue-a-redis-sorted-set] [    Test worker] i.n.r.d.DnsServerAddressStreamProviders  : Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+    2026-05-18T02:10:31.697+09:00  INFO 79532 --- [queue-a-redis-sorted-set] [    Test worker] c.dongwoo.queuea.QueueAThroughputTest    : Started QueueAThroughputTest in 1.569 seconds (process running for 2.115)
+
+QueueAThroughputTest > throughput_10k_enqueue_then_dispatch_1k_per_second() STANDARD_ERROR
+    Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+    WARNING: A Java agent has been loaded dynamically (/Users/idong-u/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.8/f09415827a71be7ed621c7bd02550678f28bc81c/byte-buddy-agent-1.17.8.jar)
+    WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+    WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+    WARNING: Dynamic loading of agents will be disallowed by default in a future release
+
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+
+> Task :queue-a-redis-sorted-set:test
+
+QueueAThroughputTest > throughput_10k_enqueue_then_dispatch_1k_per_second() STANDARD_OUT
+    ===== QUEUE-A RESULT =====
+    enqueueCount=10000
+    admittedCount=10000
+    elapsedMs=9479
+    enqueueElapsedMs=350
+    admitElapsedMs=9129
+    enqueueOpsPerSec=28571
+    admitOpsPerSec=1095
+    throughput=28571
+    p50EnqueueMs=0.945
+    p99EnqueueMs=3.235
+    p99=3.235
+    success=true
+    ==========================
+
+QueueAThroughputTest > throughput_10k_enqueue_then_dispatch_1k_per_second() PASSED
+
+[Incubating] Problems report is available at: file:///Users/idong-u/d/queue-alternatives/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.4.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 18s
+4 actionable tasks: 2 executed, 2 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.4.1/userguide/configuration_cache_enabling.html
