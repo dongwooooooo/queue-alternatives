@@ -2,6 +2,9 @@
 
 Stage 3 (대기열) 진입을 위해 [ticketing](https://github.com/dongwooooooo/ticketing) §6 에서 비교 검토할 3가지 대기열 구현 대안.
 
+**전체 26 시나리오 통합 정리 (사용자 행동 형식)**: [Notion 부하 측정 시나리오 페이지](https://www.notion.so/36473344235881adbdf7d64842f9a539)
+**관련 레포**: [`ticketing`](https://github.com/dongwooooooo/ticketing) (메인) · [`seat-lock-alternatives`](https://github.com/dongwooooooo/seat-lock-alternatives) · [`ticketing-observability`](https://github.com/dongwooooooo/ticketing-observability) (k6+Grafana)
+
 ## 진입 배경
 
 [seat-lock-alternatives](https://github.com/dongwooooooo/seat-lock-alternatives) 의 stress-baseline / stress-baseline-deep 측정으로 다음이 입증됨:
